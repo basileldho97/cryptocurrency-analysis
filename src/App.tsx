@@ -12,7 +12,7 @@ export default function App(): JSX.Element {
       <Router>
       <MenuNav />
       <Routes>
-        <Route path='/react-crypto' element={<HomePage />} />
+        <Route path='/' element={<HomePage />} />
         <Route path='/chart' element={<ChartPage/>} />
         <Route path='/exchanges' element={<ExchangesPage/>} />
       </Routes>
