@@ -1,0 +1,75 @@
+.layout{
+    min-height: 100dvh;
+    overflow-x: hidden;
+}
+
+#app-header{
+    padding: 10px;
+    color: #fff;
+    min-height: 80px;
+    background-color: #001529;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    .load-button{
+        --color: #fff;
+        color: var(--color);
+        cursor: pointer;
+
+        padding: 2px;
+        background: #1677ff;
+        border-radius: 8px;
+
+        display: flex;
+        align-items: center;
+    }
+}
+
+#app-sidebar{
+    color: #fff;
+    background-color: #001529;
+}
+
+#app-content{
+    color: #fff;
+    background-color: #001529;
+    padding: 1rem;
+
+    h3{
+        --font-size: clamp(20px, 0.932rem + 1.59vw, 34px);
+        font-size: var(--font-size);
+
+        .ant-statistic-content{
+            font-size: var(--font-size);
+        }
+
+        .ant-statistic .ant-statistic-title {
+            display: none;
+          }
+    }
+
+    .crypto-chart-wrapper{
+        max-width: 600px;
+        width: 100%;
+        aspect-ratio: 1/1;
+        padding: 20px 0;
+        margin: 0 auto;
+    }
+
+    .table-wrapper{
+        overflow-x: auto;
+        .ant-table-wrapper{
+            min-width: 500px;
+        }
+        .ant-pagination{
+            background-color: #fff;
+            margin: 0;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

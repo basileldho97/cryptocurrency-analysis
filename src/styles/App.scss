@@ -1,0 +1,23 @@
+@import './loader.scss';
+@import './main-drawer.scss';
+@import './menu-nav.scss';
+@import './selects.scss';
+@import './exchanges.scss';
+@import './crypto-calculator.scss';
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #001529;
+  color: #fff;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}

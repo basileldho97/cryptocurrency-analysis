@@ -1,0 +1,46 @@
+.menu-nav-wrapper{
+    padding: 10px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00152981;
+    border-bottom: 1px solid #1677ff;
+
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+
+    .nav-item{
+        --color: #fff;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: var(--color);
+        cursor: pointer;
+
+        padding: 4px 8px;
+        background: #1677ff;
+        border-radius: 8px;
+
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &.load{
+            padding: 2px;
+            aspect-ratio: 1/1;
+        }
+
+        @media (max-width: 500px) {
+            aspect-ratio: 1/1;
+            &.load{
+                padding: 6px;
+            }
+            span{
+                display: none;
+            }
+        }
+    }
+}
